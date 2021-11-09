@@ -1,0 +1,44 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:start": "nodemon build/server.js",
+    "dev:build:client": "webpack --config webpack.client.js --watch",
+    "dev:build:server": "webpack --config webpack.server.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "axios": "^0.24.0",
+    "babel-loader": "^8.2.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.3",
+    "nodeman": "^1.1.2",
+    "nodemon": "^2.0.14",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.4.0",
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "cros": "^1.0.1"
+  }
+}
