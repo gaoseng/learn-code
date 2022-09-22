@@ -13,6 +13,7 @@ app.use('/api', proxy('http://127.0.0.1:4000', {
 }));
 
 app.get('*', (req, res) => {
+  console.log('1234455')
   render(req, res);
 })
 
